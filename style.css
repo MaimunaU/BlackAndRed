@@ -1,0 +1,76 @@
+h1, #win{
+    color: gray;
+    text-align: center;
+    font: 70px Courier;
+}
+
+#bl {
+    color: black;
+}
+
+#rd {
+    color: red;
+}
+
+.label {
+    font: 60px Courier;
+    text-align: center;
+    border: 3px solid gray;
+}
+
+.tokens {
+    color: white;
+    font: 50px Courier;
+    text-align: center;
+}
+
+#grid, #player, #computer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+#player, #computer {
+    margin-left: 50px;
+}
+
+.red {
+    background-color: red;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+}
+
+.black {
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+}
+
+button {
+    margin: 20px;
+}
+
+table {
+    border: thick solid black;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+th, td {
+    border: thin solid black;
+    padding: 8px;
+    width: 50%
+}
+
+a {
+    text-decoration: none;
+    font: 30px Courier;
+    color: gray;
+}
+
+.rules {
+    text-align: center;
+    font: 30px Courier;
+}

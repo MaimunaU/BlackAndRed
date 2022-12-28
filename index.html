@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'>
+    <script src='script.js'></script>
+    <title>Black and Red Game</title>
+</head>
+<body onload='initialize();'>
+    <a href = 'rules.html'>Rules</a>
+    <h1><span id='bl'>Black</span> and <span id='rd'>Red</span> Game</h1>
+    <div id='grid'>
+        <p class='label'>Player</p>
+        <p class='label'>Computer</p>
+        <div id='player'>
+            <div class='red'>
+                <p class='tokens'><span id='prTokens'></span></p>
+            </div>
+            <div class='black'>
+                <p class='tokens'><span id='pbTokens'></span></p>
+            </div>
+        </div>
+        <div id='computer'>
+            <div class='red'>
+                <p class='tokens'><span id='crTokens'></span></p>
+            </div>
+            <div class='black'>
+                <p class='tokens'><span id='cbTokens'></span></p>
+            </div>
+        </div>
+    </div>
+    <p id='win'><span id='winner'></span></p> 
+    <button onclick='rollDice();'>Roll Dice</button>
+    <span>Red Dice Roll: <span id='rdie'></span> Black Dice Roll: <span id='bdie'></span></span>
+    <button onclick='window.location.reload();'>Restart Game</button>
+    <br>
+    <button onclick='plusRed(); recordMoves(1);'>Add to your red pile and remove from your opponent's black pile</button>
+    <button onclick='plusBlack(); recordMoves(2);'>Add to your black pile and remove from your opponent's red pile</button>
+    <button onclick='minusRed(); recordMoves(3);'>Remove from your red pile and add to your opponent's black pile</button>
+    <button onclick='minusBlack(); recordMoves(4);'>Remove from your black pile and add to your opponent's red pile</button>
+    <table id = 'movetable'>
+        <tr>
+            <th>Player's Movements</th>
+            <th>Computer's Movements</th>
+        </tr>
+    </table>
+</body>
+</html>
